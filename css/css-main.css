@@ -1,0 +1,71 @@
+body {
+      font-family: 'Yatra One', Helvetica, cursive;
+      font-family: 'Kaushan Script', Helvetica, cursive;
+      font-family: 'Roboto Condensed', 'Advent Pro', sans-serif;
+      font-size: 1em;
+      background-color:#909090;
+      box-sizing: border-box;
+}
+
+.main-wrapper {
+      margin: auto;
+      overflow: hidden;
+}
+
+.wrapper-01-left {
+      width: 15%;
+      float: left;
+      overflow: hidden;
+}
+
+.wrapper-02-right {
+      width: 15%;
+      float: right;
+      overflow: hidden;
+}
+
+.wrapper-03-centre {
+      margin: auto;
+      width: 68%;
+      height: 600px;
+      border: 1px solid #fcfcfc;
+}
+
+.box-01 {
+      width: 80%;
+      height: 100px;
+      background-color: red;
+      float: left;
+      border: 1px solid #fcfcfc;
+}
+
+#photoName {
+      width: 100%;
+}
+
+.box-02 {
+      width: 80%;
+      height: 100px;
+      background-color: blue;
+      float: right;
+      border: 1px solid #fcfcfc;
+}
+
+.nav-item {
+      font-family: 'Roboto Condensed';
+      font-size:  2em;
+      font-style: normal;
+      font-variant: small-caps;
+      text-align: center;
+      padding-top: 15%;
+}
+
+
+img{
+          display: block;
+          margin: auto;
+}
+
+.stretch {
+      width: 100%;
+}
