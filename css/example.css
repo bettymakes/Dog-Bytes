@@ -14,7 +14,7 @@ h1 {
 
 .container {
   background-color: #ccc;
-  height: 300px;
+  height: 500px;
   width: 700px;
   margin: auto;
   overflow: hidden;
@@ -58,4 +58,9 @@ h1 {
 #btn-next:hover {
   background-color: #7ecf7e;
   cursor: pointer;
+}
+
+.static-content {
+  background-color: yellow;
+  padding: 5px 0;
 }

@@ -29,6 +29,28 @@ $(document).ready(function() {
     */
     for(var i = 0; i < primarySet.length; i++) {
 
+      // Declare variables for static content
+      var staticLeftContent = null,
+          staticRightContent = null;
+
+      // Assign the static elements depending on loop iteration
+      if (i === 0) {
+        var staticLeftContent = '<h6 class="static-content">Pikachu</h6>';
+        var staticRightContent = '<h6 class="static-content">Bulbasaur</h6>';
+      }
+      else if (i === 1) {
+        var staticLeftContent = '<h6 class="static-content">Charmander</h6>';
+        var staticRightContent = '<h6 class="static-content">Slowpoke</h6>';
+      }
+      else if (i === 2) {
+        var staticLeftContent = '<h6 class="static-content">Weedle</h6>';
+        var staticRightContent = '<h6 class="static-content">Mewtwo</h6>';
+      }
+      else if (i === 3) {
+        var staticLeftContent = '<h6 class="static-content">Magickarp</h6>';
+        var staticRightContent = '<h6 class="static-content">Digglet</h6>';
+      }
+
       /*
         Each time this loop runs, it will create an <h2> html element.
         The text inside will read Agent 001 or 002, etc. depending on where we're at in the loop.
@@ -37,6 +59,7 @@ $(document).ready(function() {
       */
       var leftItem = '<h2> Agent ' + primarySet[i] + '! </h2>';
       $(leftItem).appendTo($filmStripLeft);
+      staticLeftContent ? $(staticLeftContent).appendTo($filmStripLeft) : false;
 
       /*
         Similarly, we'll do the same with the right side.
@@ -48,6 +71,7 @@ $(document).ready(function() {
       */
       var rightItem = '<h2> Agent ' + remainingSet[i] + ' <3 </h2>';
       $(rightItem).appendTo($filmStripRight);
+      staticRightContent ? $(staticRightContent).appendTo($filmStripRight) : false;
 
     }
   }
