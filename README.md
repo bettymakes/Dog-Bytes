@@ -1,21 +1,28 @@
-Dear Betty:
+Hey Wanda!
 
-Well ... I must say I am pretty pleased with myself.  I have spent many many hours creating a functional film strip gallery.  
-I have done it with one photo.  However, I want to repeat this process for all the thumbnail photos.
+Instead of making changes to your code, I decided to abstract the specific
+feature/interaction you wanted to achieve and isolated that code in
+separate files.
 
-I need to create a for loop ... something like
-            var all-thumbnails = $('.thumb-size').length
-            for(var i=0; i < all-thumbnails; i++)
+The code is focused on the functionality of cycling numerous items will through
+the film strips. When you get to the last item, it'll cycle back to the first.
 
-here my extensive knowledge ends.  I would like to know how to do the following:
-create the for loop that will go around my coding
-create internal variables that will get the next photo
-each photo has a unique class.  The number changes with each photo.  
-I think I could create a variable called photo?? where ?? is the number but I would need to add
-this number to the class.  I am certain I am not being very clear.  
-It seems that if I select the "thumb-size" images,  I will get all the images.  I could use this like an array, but I don't know how to do that, so I could use some help with this concept.  
+![Film Strip Cycle](https://s3.amazonaws.com/bitmakerhq/resources/front-end-development/film-strip-cycle.gif)
 
-Hope you like what I have done so far.  I do hope it's not to convoluted.  Can you help me create this loop
-so I can make the whole film strip work?
+In the example above, I am only displaying 10 items at a time on the page. However,
+I have 16 items to cycle through. So once we get to the 16th item, it starts back
+again at the 1st item.
 
-Regards, Wanda
+---
+#### What I've done
+
+I've created 3 new files:
+1. `example.html`
+2. `example.css`
+3. `example.js`
+
+The main file you want to focus on is `example.js`. I've left comments throughout
+the document, so it should help guide you with understanding the logic. There are
+a few comments in the `example.html` file as well.
+
+In this example, I'm inserting text. You'll be able to do the same with your images.
