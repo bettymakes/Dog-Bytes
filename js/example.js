@@ -86,7 +86,11 @@ $(document).ready(function() {
     primarySet.push(remainingSetFirstItem)
 
 
-    // Remove all the items from the film strip
+    /*
+      Before we append the new set of items to the film strip, we'll need to remove all the current items
+      that are housed there. If we don't remove the items, we'll be appending more and more items
+      to the film strip. And we don't want that!
+    */
     $('#film-strip-left').empty();
     $('#film-strip-right').empty();
 
