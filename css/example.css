@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
 .container {
   background-color: #ccc;
   height: 300px;
@@ -17,10 +25,11 @@
   float: left;
   width: 25%;
   height: 100%;
+  text-align: center;
 }
 
 #film-strip-left {
-  background-color: tomato;
+  background-color: mediumaquamarine;
 }
 
 #film-strip-right {

@@ -1,8 +1,9 @@
 $(document).ready(function() {
 
-  // Declaring all my variables
   /*
-    The number of items we place in our primarySet array is crucial.
+    Declaring all my variables
+
+    NOTE: The number of items we place in our primarySet array is crucial.
     That number will dictate how many items will show up in my film strip.
     In this scenario, I want my film strips to hold 5 items on both sides,
     that's why I've placed only 5 items in my primarySet.
