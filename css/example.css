@@ -17,7 +17,13 @@ h1 {
   height: 500px;
   width: 700px;
   margin: auto;
-  overflow: hidden;
+  position: relative;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 #film-strip-left,
@@ -45,14 +51,15 @@ h1 {
 
 #btn-next {
   background-color: lightgreen;
-  padding: 1em 2em;
   border: none;
   font-weight: bold;
   font-size: 20px;
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 25%;
+  width: 175px;
+  height: 60px;
+
+  position: absolute;
+  bottom: -60px;
+  right: 0;
 }
 
 #btn-next:hover {
