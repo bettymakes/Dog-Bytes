@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #ccc;
+  height: 300px;
+  width: 700px;
+  margin: auto;
+  overflow: hidden;
+}
+
+#film-strip-left,
+#film-strip-right {
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+
+#film-strip-left {
+  background-color: tomato;
+}
+
+#film-strip-right {
+  background-color: dodgerblue;
+}
+
+#center-stage {
+  float: left;
+  width: 50%;
+  border: 3px solid black;
+  height: 100%;
+}
+
+#btn-next {
+  background-color: lightgreen;
+  padding: 1em 2em;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 25%;
+}
+
+#btn-next:hover {
+  background-color: #7ecf7e;
+  cursor: pointer;
+}
